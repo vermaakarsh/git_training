@@ -34,6 +34,7 @@ No commits yet
 
 nothing added to commit but untracked files present (use "git add" to track)
 </code></pre>
+<p><strong>Note</strong> - The Untitled.ipynb is just a sample file. Any file in place of this can be used of any extension.</p>
 <p>This is very informational. Let us evaluate each of the messages before proceeding further.</p>
 
 <table>
