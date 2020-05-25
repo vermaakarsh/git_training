@@ -62,9 +62,10 @@ nothing added to commit but untracked files present (use "git add" to track)
 <p><strong>Git Branch</strong> - A <strong>branch in Git</strong> is simply a lightweight movable pointer to one of these commits. The default <strong>branch</strong> name in <strong>Git</strong> is <strong>master</strong>. As you initially make commits, you’re given a master <strong>branch</strong> that points to the last commit you made. Every time you commit, it moves forward automatically.<br>
 <br></p>
 <p><strong>Git Commit</strong> - <strong>Commits are</strong> created with the <em>git commit</em> command to capture the state of a project at that point in time.</p>
-<p>Effectively we are trying to achieve the following :<br>
+<p>Effectively we are trying to achieve the following workflow:<br>
 <br></p>
 <img src="https://www.nobledesktop.com/image/gitresources/git-branches-merge.png">
+<p>We will now add all the files that are currently untracked.</p>
 <pre><code>Git add . 
 Git status
 </code></pre>
@@ -84,4 +85,18 @@ Changes not staged for commit:
 	modified:   Untitled.ipynb
 </code></pre>
 <p>The status has not changed to <strong>No Commits</strong> which specifies that changes are yet to be committed to the branch master.</p>
+<p>Before we start committing Git needs to know who we are in order to maintain a name and email ID along with the commits. Execute the following before making a commit.</p>
+<pre><code>git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+</code></pre>
+<p>Now, let’s <strong>Commit</strong></p>
+<pre><code>Git commit -m "Initial Commit"
+</code></pre>
+<p>The <strong>hyphen m</strong> specifies the comment that should be added to commit. Consider it like a change log that a user can maintain.</p>
+<pre><code>[master (root-commit) 8adb831] Initial Commit
+ 2 files changed, 113 insertions(+)
+ create mode 100644 .ipynb_checkpoints/Untitled-checkpoint.ipynb
+ create mode 100644 Untitled.ipynb
+</code></pre>
+<p>The following message confirms that 2 files were changed with 113 lines added into Git version system. Furthermore we can track <strong>Git Status</strong> which we have already learnt.</p>
 
