@@ -3,7 +3,7 @@ author: Akarsh Verma
 
 ---
 
-<h1 id="learn-git-from-jupyter-notebooks-">Learn Git from Jupyter Notebooks !!</h1>
+<h1 id="learn-git-..--v-1.0">Learn Git … !! V 1.0</h1>
 <p>Hi! I’m will be your guide to learn <strong>Git</strong>.</p>
 <blockquote>
 <p>To keep things simple we will use the command line to execute Git commands.</p>
