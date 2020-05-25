@@ -99,4 +99,17 @@ git config --global user.name "Your Name"
  create mode 100644 Untitled.ipynb
 </code></pre>
 <p>The following message confirms that 2 files were changed with 113 lines added into Git version system. Furthermore we can track <strong>Git Status</strong> which we have already learnt.</p>
+<h2 id="branching">Branching</h2>
+<p>Branching is just a natural way to manage and maintain individual code in isolation and merge when ready to the master. This approach allows multiple people to work on same code base and realize the changes once everyone is ready. This is naturally collaborative.</p>
+<p><strong>Git Branch</strong> is a command to allow to work with branches.</p>
+<pre><code>Git branch --create dev
+</code></pre>
+<p>This creates a new branch called <strong>dev</strong>. This is just a name and can be anything. Usually branch names are tied to environments or feature or people depending on the Team’s agreement.  We can easily see the branches we have.</p>
+<pre><code>Git branch --list
+
+  dev
+* master
+  qa
+</code></pre>
+<p>I have crated two branches dev &amp; qa apart from master. The * denotes the current branch under selection/operation.</p>
 
