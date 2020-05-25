@@ -62,6 +62,26 @@ nothing added to commit but untracked files present (use "git add" to track)
 <p><strong>Git Branch</strong> - A <strong>branch in Git</strong> is simply a lightweight movable pointer to one of these commits. The default <strong>branch</strong> name in <strong>Git</strong> is <strong>master</strong>. As you initially make commits, you’re given a master <strong>branch</strong> that points to the last commit you made. Every time you commit, it moves forward automatically.<br>
 <br></p>
 <p><strong>Git Commit</strong> - <strong>Commits are</strong> created with the <em>git commit</em> command to capture the state of a project at that point in time.</p>
-<p>Effectively we are trying to achieve the following :</p>
+<p>Effectively we are trying to achieve the following :<br>
+<br></p>
 <img src="https://www.nobledesktop.com/image/gitresources/git-branches-merge.png">
+<pre><code>Git add . 
+Git status
+</code></pre>
+<p>We will be adding the un-tracked listed above in our repository. Notice the “dot” at the end. This is to select all the files. Alternatively, file names can be specified.</p>
+<pre><code>On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached &lt;file&gt;..." to unstage)
+	new file:   .ipynb_checkpoints/Untitled-checkpoint.ipynb
+	new file:   Untitled.ipynb
+
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git restore &lt;file&gt;..." to discard changes in working directory)
+	modified:   Untitled.ipynb
+</code></pre>
+<p>The status has not changed to <strong>No Commits</strong> which specifies that changes are yet to be committed to the branch master.</p>
 
