@@ -11,7 +11,7 @@ author: Akarsh Verma
 <p><a href="%5Bhttps://git-scm.com/%5D(https://git-scm.com/)">Git</a> is a version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers.</p>
 <p><a href="%5Bhttps://github.com/%5D(https://github.com/)">Github</a> brings together the world’s largest community of developers to discover, share, and build better software.</p>
 <p>We will use <a href="%5Bhttps://github.com/%5D(https://github.com/)">Github</a> as the platform to practice our learning.</p>
-<img src="https://git-scm.com/images/branching-illustration@2x.png" width="500" height="300" href="[https://git-scm.com/images/branching-illustration@2x.png](https://git-scm.com/images/branching-illustration@2x.png)">
+<p>&lt;img src=“<a href="https://git-scm.com/images/branching-illustration@2x.png">https://git-scm.com/images/branching-illustration@2x.png</a>” width=“500” height=“300” "/&gt;</p>
 <h4 id="lets-begin-by-creating-a-local-repository-execute-the-command-in-a-cell">Let’s Begin by Creating a Local Repository (Execute the command in a Cell)</h4>
 <pre><code>Git init
 
