@@ -76,7 +76,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 <p>Effectively we are trying to achieve the following workflow:<br>
 <br></p>
 <img src="https://www.nobledesktop.com/image/gitresources/git-branches-merge.png">
-<p>We will now add all the files that are currently untracked.</p>
+<p>We will now add the files that are currently untracked.</p>
 <pre><code>Git add . 
 Git status
 </code></pre>
@@ -87,13 +87,7 @@ No commits yet
 
 Changes to be committed:
   (use "git rm --cached &lt;file&gt;..." to unstage)
-	new file:   .ipynb_checkpoints/Untitled-checkpoint.ipynb
-	new file:   Untitled.ipynb
-
-Changes not staged for commit:
-  (use "git add &lt;file&gt;..." to update what will be committed)
-  (use "git restore &lt;file&gt;..." to discard changes in working directory)
-	modified:   Untitled.ipynb
+        new file:   hello.txt
 </code></pre>
 <p>The status has not changed to <strong>No Commits</strong> which specifies that changes are yet to be committed to the branch master.</p>
 <p>Before we start committing Git needs to know who we are in order to maintain a name and email ID along with the commits. Execute the following before making a commit.</p>
@@ -104,12 +98,11 @@ git config --global user.name "Your Name"
 <pre><code>Git commit -m "Initial Commit"
 </code></pre>
 <p>The <strong>hyphen m</strong> specifies the comment that should be added to commit. Consider it like a change log that a user can maintain.</p>
-<pre><code>[master (root-commit) 8adb831] Initial Commit
- 2 files changed, 113 insertions(+)
- create mode 100644 .ipynb_checkpoints/Untitled-checkpoint.ipynb
- create mode 100644 Untitled.ipynb
+<pre><code>[master (root-commit) 4bf0552] Initial Commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 hello.txt
 </code></pre>
-<p>The following message confirms that 2 files were changed with 113 lines added into Git version system. Furthermore we can track <strong>Git Status</strong> which we have already learnt.</p>
+<p>The following message confirms that 1 files was changed with 2 lines added into Git version system. Furthermore we can track <strong>Git Status</strong> which we have already learnt.</p>
 <h2 id="branching">Branching</h2>
 <p>Branching is just a natural way to manage and maintain individual code in isolation and merge when ready to the master. This approach allows multiple people to work on same code base and realize the changes once everyone is ready. This is naturally collaborative.</p>
 <p><strong>Git Branch</strong> is a command to allow to work with branches.</p>
