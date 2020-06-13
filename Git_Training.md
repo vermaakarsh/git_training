@@ -179,4 +179,5 @@ Date:   Sun Jun 14 01:07:43 2020 +0530
 
     Initial Commit
 </code></pre>
+<p>The <strong>Git Log</strong> provides quite a lot of information. It tells the user about the status of each branch along with the last commit messages which are timestamped to understand and select the right change.</p>
 
