@@ -69,9 +69,8 @@ nothing added to commit but untracked files present (use "git add" to track)
 </tr>
 </tbody>
 </table><br>
+**Git Branch** - A **branch in Git** is simply a lightweight movable pointer to one of these commits. The default **branch** name in **Git** is **master**. As you initially make commits, you're given a master **branch** that points to the last commit you made. Every time you commit, it moves forward automatically.
 <br>
-<p><strong>Git Branch</strong> - A <strong>branch in Git</strong> is simply a lightweight movable pointer to one of these commits. The default <strong>branch</strong> name in <strong>Git</strong> is <strong>master</strong>. As you initially make commits, you’re given a master <strong>branch</strong> that points to the last commit you made. Every time you commit, it moves forward automatically.<br>
-<br></p>
 <p><strong>Git Commit</strong> - <strong>Commits are</strong> created with the <em>git commit</em> command to capture the state of a project at that point in time.</p>
 <p>Effectively we are trying to achieve the following workflow:<br>
 <br></p>
