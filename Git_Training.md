@@ -154,13 +154,15 @@ index 21f10ab..3e23ae4 100644
 +
 +hello
 </code></pre>
-<p>This describes every addition and deletion operation with the modified record.<br>
-&gt; 1. Created an Empty Git Repository and added a file to it to track.</p>
+<p>This describes every addition and deletion operation with the modified record.</p>
 <blockquote>
-<p>To Summarize our actions so far. We have achieved the following :<br>
-2. Created different branches<br>
-3. On Branch <strong>dev</strong> we have edited and saved the information that was changed.<br>
-4. The changes were evaluated using <strong>Git Diff</strong> command.</p>
+<p>To Summarize our actions so far. We have achieved the following :</p>
+<ol>
+<li>Created an Empty Git Repository and added a file to it to track.</li>
+<li>Created different branches</li>
+<li>On Branch <strong>dev</strong> we have edited and saved the information that was changed.</li>
+<li>The changes were evaluated using <strong>Git Diff</strong> command.</li>
+</ol>
 </blockquote>
 <p>Our Master is still behind by an update compared to <strong>dev</strong> branch. A handy command to use is <strong>Git Log</strong></p>
 <p>The <strong>Git Log</strong> tool allows you to view information about previous commits that have occurred in a project. The simplest version of the <strong>log</strong> command shows the commits that lead up to the state of the currently checked out branch. These commits are shown in reverse chronological order (the most recent commits first).</p>
@@ -180,4 +182,42 @@ Date:   Sun Jun 14 01:07:43 2020 +0530
     Initial Commit
 </code></pre>
 <p>The <strong>Git Log</strong> provides quite a lot of information. It tells the user about the status of each branch along with the last commit messages which are timestamped to understand and select the right change.</p>
+<p>These set of commands are extremely handy when working on Git and formulate the foundations of a Version Control System.</p>
+<h2 id="merging">Merging</h2>
+<p>Merging is an idea where we take our independent feature/change and align it with the larger Code Life-cycle. This is foundational to Git as it ensure that though people operate in isolation the most updated version is always available for ready usage.</p>
+<p>Introducing, <strong>Git Merge</strong><br>
+The <strong>git merge</strong> command lets you take the independent lines of development created by <strong>git</strong> branch and integrate them into a single branch. … Again, this means that <strong>git merge</strong> is often used in conjunction with <strong>git</strong> checkout for selecting the current branch and <strong>git</strong> branch -d for deleting the obsolete target branch.</p>
+<p>Let us start by switching to Master branch first.</p>
+<pre><code>&gt; git checkout master
+Switched to branch 'master'
+</code></pre>
+<p>The Status should specify that master has no changes.</p>
+<pre><code>&gt; git status
+On branch master
+nothing to commit, working tree clean
+</code></pre>
+<p>Let’s run the <strong>Git Merge</strong></p>
+<pre><code>git merge dev
+
+Updating 4bf0552..2b1ab39
+Fast-forward
+ hello.txt | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+</code></pre>
+<p><strong>We have merged Dev Branch into Master. We can validate this the Git Log command</strong></p>
+<pre><code>&gt; git log
+commit 2b1ab39870ed9eb38c47a34c6dd08cb5b4a92c09 (HEAD -&gt; master, dev)
+Author: Akarsh &lt;akarsh.verma@live.in&gt;
+Date:   Sun Jun 14 01:34:49 2020 +0530
+
+    Update
+
+commit 4bf055215f054e1e553bd9aa727cee237bd3eaff (qa)
+Author: Akarsh &lt;akarsh.verma@live.in&gt;
+Date:   Sun Jun 14 01:07:43 2020 +0530
+
+    Initial Commit
+</code></pre>
+<p>The <strong>HEAD</strong> in the Git repo is pointing to <strong>master</strong> and <strong>dev</strong> both of which has the latest update. We can now delete the branch <strong>dev</strong> and continue our development for another feature.</p>
+<p><strong>Git Head</strong>. The <strong>HEAD</strong> points out the last commit in the current checkout branch. It is like a pointer to any reference. The <strong>HEAD</strong> can be understood as the “current branch.” When you switch branches with ‘checkout,’ the <strong>HEAD</strong> is transferred to the new branch.</p>
 
