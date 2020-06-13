@@ -25,16 +25,26 @@ Initialized empty Git repository in D:/git_training/.git/
 </code></pre>
 <p>This would allow us to check the current status of our Repository at any point in time.</p>
 <pre><code>On branch master
+
 No commits yet
 
-    Untracked files:
+nothing to commit (create/copy files and use "git add" to track)
+</code></pre>
+<p>Let’s add a New File to the Folder called “<strong>hello.txt</strong>” which has a sample text inside it.</p>
+<p>Execute the following to see if Git has started tracking changes.</p>
+<pre><code>Git Status
+</code></pre>
+<p>The Output should be something similar to this.</p>
+<pre><code>On branch master
+
+No commits yet
+
+Untracked files:
   (use "git add &lt;file&gt;..." to include in what will be committed)
-	.ipynb_checkpoints/
-	Untitled.ipynb
+        hello.txt
 
 nothing added to commit but untracked files present (use "git add" to track)
 </code></pre>
-<p><strong>Note</strong> - The Untitled.ipynb is just a sample file. Any file in place of this can be used of any extension.</p>
 <p>This is very informational. Let us evaluate each of the messages before proceeding further.</p>
 
 <table>
