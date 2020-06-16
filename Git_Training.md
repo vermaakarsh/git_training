@@ -11,7 +11,7 @@ author: Akarsh Verma
 <p><a href="%5Bhttps://git-scm.com/%5D(https://git-scm.com/)">Git</a> is a version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers.</p>
 <p><a href="%5Bhttps://github.com/%5D(https://github.com/)">Github</a> brings together the world’s largest community of developers to discover, share, and build better software.</p>
 <p>We will use <a href="%5Bhttps://github.com/%5D(https://github.com/)">Github</a> as the platform to practice our learning.</p>
-<p>&lt;img src=“<a href="https://git-scm.com/images/branching-illustration@2x.png">https://git-scm.com/images/branching-illustration@2x.png</a>” width=“500” height=“300” "/&gt;</p>
+ <img src="https://git-scm.com/images/branching-illustration@2x.png" width="500" height="300">
 <h4 id="lets-begin-by-creating-a-local-repository-execute-the-command-in-a-cell">Let’s Begin by Creating a Local Repository (Execute the command in a Cell)</h4>
 <pre><code>&gt; Git init
 
@@ -88,7 +88,7 @@ Changes to be committed:
         new file:   hello.txt
 </code></pre>
 <p>The status has not changed to <strong>No Commits</strong> which specifies that changes are yet to be committed to the branch master.</p>
-<p>Before we start committing Git needs to know who we are in order to maintain a name and email ID along with the commits. Execute the following before making a commit.</p>
+<p>Before we start committing Git needs to know who we are in order to maintain a name and email ID along with the commits. Execute the following before making a commit.  <strong>This is a One Time Activity.</strong></p>
 <pre><code>&gt; git config --global user.email "you@example.com"
 &gt; git config --global user.name "Your Name"
 </code></pre>
